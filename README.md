@@ -11,6 +11,12 @@
 
 详见[docker-compose.yml](docker-compose.yml)
 
+## 拉取
+
+'''
+docker pull ca11back/dof-server:centos7
+'''
+
 ## 简单启动
 '''
 docker run -d \
