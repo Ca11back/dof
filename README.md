@@ -13,12 +13,12 @@
 
 ## 拉取
 
-'''
+```
 docker pull ca11back/dof-server:centos7
-'''
+```
 
 ## 简单启动
-'''
+```
 docker run -d \
 -e TZ=Asia/Shanghai \
 -e AUTO_MYSQL_IP=true \
@@ -54,4 +54,4 @@ docker run -d \
 --name dofserver \
 --network=dnf \
 ca11back/dof-server:centos7
-'''
+```
