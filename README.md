@@ -7,9 +7,9 @@
 4. 不内置pvf,publickey.pem,如没有对应文件运行会直接停止
 5. 不内置dp2,需要在data文件夹新建dp2文件夹并放入所有dp2组件
 
-## 启动
+## 参数
 
-详见[docker-compose.yml](docker-compose.yml)
+详见[docker-compose.yml](dof-server/docker-compose.yml)
 
 ## 拉取
 
