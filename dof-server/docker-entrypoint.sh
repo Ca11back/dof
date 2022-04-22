@@ -96,8 +96,7 @@ chmod 777 /home/neople/game/Script.pvf
 cp /data/df_game_r /home/neople/game/df_game_r
 chmod 777 /home/neople/game/df_game_r
 cp /data/publickey.pem /home/neople/game/
-cp /data/run /root/
-cp /data/stop /root/
+cp -rf /data/root/* /root/
 chmod 777 /root/*
 
 cd /root && chmod +x /root/*

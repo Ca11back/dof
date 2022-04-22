@@ -3,7 +3,7 @@
 基于[XanderYe](https://github.com/XanderYe/dnf)的dnf-server,不含mysql:
 1. 新增环境变量S52: 是否运行52频道,默认不运行
 2. 删除内置网关
-3. 暴露run和stop便于自定义
+3. 暴露root文件夹,包含run和stop便于自定义网关/运行脚本
 4. 不内置pvf,publickey.pem,如没有对应文件运行会直接停止
 5. 不内置dp2,需要在data文件夹新建dp2文件夹并放入所有dp2组件
 
