@@ -24,7 +24,7 @@ fi
 # 判断run文件是否初始化过
 if [ ! -f "/data/root/run" ]; then
   # 拷贝版本文件到持久化目录
-  cp /home/template/init/run /data/root/
+  cp /home/template/init/root/run /data/root/
   echo "init run success"
 else
   echo "run has already initialized, do nothing!"
@@ -33,7 +33,7 @@ fi
 # 判断stop文件是否初始化过
 if [ ! -f "/data/root/stop" ]; then
   # 拷贝版本文件到持久化目录
-  cp /home/template/init/stop /data/root/
+  cp /home/template/init/root/stop /data/root/
   echo "init stop success"
 else
   echo "stop has already initialized, do nothing!"
