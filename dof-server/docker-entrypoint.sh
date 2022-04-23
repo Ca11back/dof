@@ -74,9 +74,10 @@ if $DP2; then
     else
       echo "loading dp2"
       # dp2脚本
+      mkdir /dp2
       cp -rf /data/dp2/* /dp2/
       # 替换dp2 lib
-      mv /dp2/libGeoIP.so.1 /lib/libGeoIP.so.1
+      mv /dp2/libGeoIP.so.1 /lib/
     fi
   fi
 fi
