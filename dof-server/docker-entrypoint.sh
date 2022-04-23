@@ -69,7 +69,7 @@ if $DP2; then
   if [ ! -d "/data/dp2" ]; then
     echo "dp2 folder not exist"
   else
-    if [ ! -d "/data/dp2/libGeoIP.so.1" ]; then
+    if [ ! -f "/data/dp2/libGeoIP.so.1" ]; then
       echo "libGeoIP.so.1(dp2) not exist"
     else
       echo "loading dp2"
