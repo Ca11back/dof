@@ -11,7 +11,6 @@ ENV MYSQL_PORT=3306
 ENV GAME_PASSWORD=uu5!^%jg
 ENV AUTO_PUBLIC_IP=false
 ENV PUBLIC_IP=127.0.0.1
-ENV DP2=false
 ENV S52=false
 
 # 将模板添加到模版目录下[后续容器启动需要先将环境变量替换,再将文件移动到正确位置]

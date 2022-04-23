@@ -5,7 +5,7 @@
 2. 删除内置网关
 3. 暴露root文件夹,包含run和stop便于自定义网关/运行脚本
 4. 不内置pvf,publickey.pem,如没有对应文件运行会直接停止
-5. 不内置dp2,需要在data文件夹新建dp2文件夹并放入所有dp2组件
+5. 不内置dp2,需要在data文件夹新建dp2文件夹并放入所有dp2组件,当/data/dp2/libGeoIP.so.1存在时会自动启用DP插件,不再读取环境变量.
 
 ## 参数
 
@@ -28,7 +28,6 @@ docker run -d \
 -e GAME_PASSWORD=uu5\!^%jg \
 -e AUTO_PUBLIC_IP=false \
 -e PUBLIC_IP=192.168.1.2 \
--e DP2=false \
 -e S52=false \
 -v /dnf/dnfserver/log:/home/neople/game/log \
 -v /dnf/dnfserver/data:/data \

@@ -19,8 +19,6 @@ services:
       - AUTO_PUBLIC_IP=false
       # 这里填写你的IP地址
       - PUBLIC_IP=127.0.0.1
-      # DP2插件
-      - DP2=false
       # 52频道
       - S52=false
     shm_size: 8g

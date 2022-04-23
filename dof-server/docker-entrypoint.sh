@@ -64,21 +64,18 @@ if $AUTO_PUBLIC_IP; then
 fi
 
 # dp插件
-if $DP2; then
-  # 判断dp2文件夹是否存在
-  if [ ! -d "/data/dp2" ]; then
-    echo "dp2 folder not exist"
+if [ ! -d "/data/dp2" ]; then
+  echo "dp2 folder not exist"
+else
+  if [ ! -f "/data/dp2/libGeoIP.so.1" ]; then
+    echo "libGeoIP.so.1(dp2) not exist"
   else
-    if [ ! -f "/data/dp2/libGeoIP.so.1" ]; then
-      echo "libGeoIP.so.1(dp2) not exist"
-    else
-      echo "loading dp2"
-      # dp2脚本
-      mkdir /dp2
-      cp -rf /data/dp2/* /dp2/
-      # 替换dp2 lib
-      mv /dp2/libGeoIP.so.1 /lib/
-    fi
+    echo "loading dp2"
+    # dp2脚本
+    mkdir /dp2
+    cp -rf /data/dp2/* /dp2/
+    # 替换dp2 lib
+    mv /dp2/libGeoIP.so.1 /lib/
   fi
 fi
 
